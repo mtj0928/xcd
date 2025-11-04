@@ -7,7 +7,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Install Swiftly
+      - name: Install Swiftly
         run: |
           curl -O https://download.swift.org/swiftly/darwin/swiftly.pkg 
           installer -pkg swiftly.pkg -target CurrentUserHomeDirectory
